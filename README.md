@@ -128,7 +128,7 @@ Chaque skill applique une ou plusieurs de ces règles :
 Ce kit, c'est la première marche : Claude qui travaille avec vous, dans vos outils.
 L'étape suivante — des agents qui tournent seuls, sur Telegram ou WhatsApp, connectés à vos systèmes — c'est ce qu'on construit ensemble en formation.
 
-**[Formations SkillHub AI](https://skillhub-centre.vercel.app)**
+**[Formations SkillHub AI — www.skillhub.ma](https://www.skillhub.ma)**
 
 ---
 
