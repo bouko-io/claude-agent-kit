@@ -51,7 +51,8 @@ Dans Claude (web ou application bureau) :
 ### Commandes
 | | |
 |---|---|
-| `/setup` | Active pas à pas : exécution de code, mémoire, profil, connecteurs, Projet, Excel, Chrome, tâches planifiées — et vérifie chaque étape |
+| `/setup` | **Commencez ici.** Claude apprend votre métier, dessine la carte de *votre* agent, active seulement ce qu'il faut, puis fait une première vraie tâche avec vous |
+| `/tour` | Tout le contenu du kit, classé par métier, avec un exemple prêt à copier |
 | `/brief` | Transforme votre demande en brief d'une page, le fait valider, puis exécute |
 | `/morning-brief` | Votre journée en une minute : agenda, mails qui attendent une réponse, 3 priorités |
 
@@ -113,7 +114,7 @@ L'étape suivante — des agents qui tournent seuls, sur Telegram ou WhatsApp, b
 Fallback: download [`claude-agent-kit-plugin.zip`](dist/claude-agent-kit-plugin.zip) → Customize → Plugins → Add → Upload plugin.
 Claude Code: `claude plugin marketplace add bouko-io/claude-agent-kit` then `claude plugin install claude-agent-kit@skillhub-ai`.
 
-**Inside**: 3 commands (`/setup`, `/brief`, `/morning-brief`), 14 skills (Excel, quotes, slides, posts, inbox, meetings, reports, web research, Chrome tasks, scheduling, memory…), 3 helper agents for Cowork (researcher, checker, editor), Canva + Notion connectors. Every skill answers in the user's language and stops before anything irreversible.
+**Inside**: 4 commands (`/setup` onboarding, `/tour`, `/brief`, `/morning-brief`), 14 skills (Excel, quotes, slides, posts, inbox, meetings, reports, web research, Chrome tasks, scheduling, memory…), 3 helper agents for Cowork (researcher, checker, editor), Canva + Notion connectors. Every skill answers in the user's language and stops before anything irreversible.
 
 Skills, memory and Gmail/Drive/Calendar work on every plan including Free. Office add-ins, Chrome, Cowork, agents and scheduled tasks need a paid plan (checked against Anthropic's docs on 2026-09-28).
 
