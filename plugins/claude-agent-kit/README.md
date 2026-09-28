@@ -19,9 +19,19 @@ Il répond dans votre langue : français, darija, arabe, anglais.
 
 Dans Claude (web ou application bureau) :
 
-1. **Personnaliser → Plugins → Ajouter → Ajouter une marketplace**
-2. Collez : **`bouko-io/claude-agent-kit`**
-3. Cliquez sur **Claude Agent Kit → Installer**
+1. Ouvrez **Customize → Plugins**, puis cliquez sur **+ Add**.
+
+   <img src="https://raw.githubusercontent.com/bouko-io/claude-agent-kit/main/docs/img/install-1-plugins-page.jpg" alt="Page Customize, onglet Plugins, bouton + Add" width="420">
+
+2. Choisissez **Add marketplace**.
+
+   <img src="https://raw.githubusercontent.com/bouko-io/claude-agent-kit/main/docs/img/install-2-add-marketplace.jpg" alt="Menu Add : Add marketplace" width="420">
+
+3. Choisissez **Add from a repository**, collez **`bouko-io/claude-agent-kit`** et validez.
+
+   <img src="https://raw.githubusercontent.com/bouko-io/claude-agent-kit/main/docs/img/install-3-from-repository.jpg" alt="Fenêtre Add marketplace : Add from a repository" width="520">
+
+   Puis cliquez sur **Claude Agent Kit → Install**.
 4. Écrivez **`/setup`** dans une conversation, et laissez-vous guider.
 
 > **Ça ne marche pas ?** Plan B : téléchargez [`claude-agent-kit-plugin.zip`](dist/claude-agent-kit-plugin.zip), puis **Personnaliser → Plugins → Ajouter → Importer un plugin**.
@@ -110,7 +120,7 @@ L'étape suivante — des agents qui tournent seuls, sur Telegram ou WhatsApp, b
 
 **Turn Claude into an agent that works for you — no code.**
 
-**Install**: in Claude, **Customize → Plugins → Add → Add marketplace** → paste `bouko-io/claude-agent-kit` → install **Claude Agent Kit** → type **`/setup`**.
+**Install**: in Claude, **Customize → Plugins → + Add → Add marketplace → Add from a repository** → paste `bouko-io/claude-agent-kit` → install **Claude Agent Kit** → type **`/setup`**.
 Fallback: download [`claude-agent-kit-plugin.zip`](dist/claude-agent-kit-plugin.zip) → Customize → Plugins → Add → Upload plugin.
 Claude Code: `claude plugin marketplace add bouko-io/claude-agent-kit` then `claude plugin install claude-agent-kit@skillhub-ai`.
 
