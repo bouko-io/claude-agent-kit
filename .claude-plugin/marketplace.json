@@ -1,0 +1,15 @@
+{
+  "name": "skillhub-ai",
+  "description": "SkillHub AI — plugins that turn Claude into an agent that works for you.",
+  "owner": {
+    "name": "SkillHub AI",
+    "url": "https://www.skillhub.ma"
+  },
+  "plugins": [
+    {
+      "name": "claude-agent-kit",
+      "source": "./plugins/claude-agent-kit",
+      "description": "Turn Claude into an agent: guided setup, 14 skills (Excel, slides, inbox, reports, quotes, meetings, research, scheduling...), 3 helper agents and Canva/Notion connectors. Answers in French, Darija, Arabic or English."
+    }
+  ]
+}

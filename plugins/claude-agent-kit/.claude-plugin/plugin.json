@@ -1,0 +1,9 @@
+{
+  "name": "claude-agent-kit",
+  "displayName": "Claude Agent Kit",
+  "version": "1.0.0",
+  "description": "Turn Claude into an agent that works for you: guided setup of memory, connectors, Excel, Chrome and scheduled tasks, 14 ready-to-use skills, 3 helper agents (researcher, checker, editor) and Canva/Notion connectors. Answers in French, Darija, Arabic or English.",
+  "author": { "name": "SkillHub AI", "url": "https://www.skillhub.ma" },
+  "homepage": "https://github.com/bouko-io/claude-agent-kit",
+  "license": "MIT"
+}
