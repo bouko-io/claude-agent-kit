@@ -1,12 +1,13 @@
 ---
-description: A quick tour of everything in the Claude Agent Kit — commands, skills, helper agents and connectors — grouped by job, each with a ready-to-copy example.
+description: Run only when the user types /claude-agent-kit:kit-tour or asks for a tour of the Claude Agent Kit. A quick tour of everything in the Claude Agent Kit — commands, skills, helper agents and connectors — grouped by job, each with a ready-to-copy example.
+disable-model-invocation: true
 ---
 
 Show the user the Claude Agent Kit, in their language, grouped by what they want to get done. Keep it scannable: one line per item with a ready-to-copy example prompt in quotes.
 
 **Start here**
-- `/claude-agent-kit:setup` — guided onboarding around your own work
-- `/claude-agent-kit:brief` — one-page brief before any big task
+- `/claude-agent-kit:kit-setup` — guided onboarding around your own work (resumable)
+- `agent-brief` — say "brief" before any big task
 - `/claude-agent-kit:morning-brief` — agenda, emails to answer, 3 priorities (Gmail + Calendar)
 
 **Numbers & files** — excel-analyst ("Totals by client and month from this file, checked"), weekly-report ("Weekly report from my Drive folder X, with sources")

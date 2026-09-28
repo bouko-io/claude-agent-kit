@@ -4,7 +4,7 @@
 
 Un seul plugin à ajouter à Claude, et vous avez :
 
-- **`/setup`** — Claude vous guide pour activer tout ce qui le rend « agent » : mémoire, connecteurs, Excel, Chrome, tâches planifiées
+- **`/kit-setup`** — un onboarding qui apprend à vous connaître (et peut importer votre contexte depuis ChatGPT), montre où vous en êtes, active ce qui manque et fait une première tâche avec vous
 - **14 skills** prêts à l'emploi : Excel, présentations, devis, mails, rapports, réunions, recherche web, posts LinkedIn…
 - **3 agents assistants** : un chercheur, un vérificateur, un éditeur
 - **Canva et Notion** prêts à connecter
@@ -32,7 +32,7 @@ Dans Claude (web ou application bureau) :
    <img src="docs/img/install-3-from-repository.jpg" alt="Fenêtre Add marketplace : Add from a repository" width="520">
 
    Puis cliquez sur **Claude Agent Kit → Install**.
-4. Écrivez **`/setup`** dans une conversation, et laissez-vous guider.
+4. Dans une nouvelle conversation, tapez **`/`** puis choisissez **`kit-setup`** (Claude Agent Kit), et laissez-vous guider. Vous pouvez le relancer quand vous voulez : il reprend où vous en étiez.
 
 > **Ça ne marche pas ?** Plan B : téléchargez [`claude-agent-kit-plugin.zip`](dist/claude-agent-kit-plugin.zip), puis **Personnaliser → Plugins → Ajouter → Importer un plugin**.
 > Plan C : importez les skills un par un depuis [`dist/skills/`](dist/skills/) via **Personnaliser → Skills → + → Importer un skill** (ne décompressez pas les fichiers).
@@ -52,7 +52,7 @@ Dans Claude (web ou application bureau) :
 | Claude dans Chrome | — | ✅ |
 | Cowork, agents assistants, tâches planifiées | — | ✅ |
 
-*Vérifié dans la documentation officielle d'Anthropic le 28/09/2026. Ça peut évoluer : `/setup` vous dira ce qui s'applique à votre plan.*
+*Vérifié dans la documentation officielle d'Anthropic le 28/09/2026. Ça peut évoluer : `/kit-setup` vous indique ce qui demande un plan payant.*
 
 ---
 
@@ -61,9 +61,8 @@ Dans Claude (web ou application bureau) :
 ### Commandes
 | | |
 |---|---|
-| `/setup` | **Commencez ici.** Claude apprend votre métier, dessine la carte de *votre* agent, active seulement ce qu'il faut, puis fait une première vraie tâche avec vous |
-| `/tour` | Tout le contenu du kit, classé par métier, avec un exemple prêt à copier |
-| `/brief` | Transforme votre demande en brief d'une page, le fait valider, puis exécute |
+| `/kit-setup` | **Commencez ici.** Choix de la langue → bilan de ce qui est déjà activé → import de votre contexte (ChatGPT, fichiers, profil) → carte de *votre* agent → activation de ce qui manque → première vraie tâche ensemble |
+| `/kit-tour` | Tout le contenu du kit, classé par métier, avec un exemple prêt à copier |
 | `/morning-brief` | Votre journée en une minute : agenda, mails qui attendent une réponse, 3 priorités |
 
 ### Skills — Claude les utilise tout seul quand votre demande correspond
@@ -120,11 +119,11 @@ L'étape suivante — des agents qui tournent seuls, sur Telegram ou WhatsApp, b
 
 **Turn Claude into an agent that works for you — no code.**
 
-**Install**: in Claude, **Customize → Plugins → + Add → Add marketplace → Add from a repository** → paste `bouko-io/claude-agent-kit` → install **Claude Agent Kit** → type **`/setup`**.
+**Install**: in Claude, **Customize → Plugins → + Add → Add marketplace → Add from a repository** → paste `bouko-io/claude-agent-kit` → install **Claude Agent Kit** → type **`/`** and pick **`kit-setup`**.
 Fallback: download [`claude-agent-kit-plugin.zip`](dist/claude-agent-kit-plugin.zip) → Customize → Plugins → Add → Upload plugin.
 Claude Code: `claude plugin marketplace add bouko-io/claude-agent-kit` then `claude plugin install claude-agent-kit@skillhub-ai`.
 
-**Inside**: 4 commands (`/setup` onboarding, `/tour`, `/brief`, `/morning-brief`), 14 skills (Excel, quotes, slides, posts, inbox, meetings, reports, web research, Chrome tasks, scheduling, memory…), 3 helper agents for Cowork (researcher, checker, editor), Canva + Notion connectors. Every skill answers in the user's language and stops before anything irreversible.
+**Inside**: 3 commands (`/kit-setup` resumable onboarding with ChatGPT context import, `/kit-tour`, `/morning-brief`), 14 skills (Excel, quotes, slides, posts, inbox, meetings, reports, web research, Chrome tasks, scheduling, memory…), 3 helper agents for Cowork (researcher, checker, editor), Canva + Notion connectors. Every skill answers in the user's language and stops before anything irreversible.
 
 Skills, memory and Gmail/Drive/Calendar work on every plan including Free. Office add-ins, Chrome, Cowork, agents and scheduled tasks need a paid plan (checked against Anthropic's docs on 2026-09-28).
 

@@ -1,5 +1,5 @@
 ---
-description: Morning brief — today's agenda, the emails that need an answer, and the 3 priorities of the day, from Gmail and Google Calendar. Perfect as a scheduled task every weekday morning.
+description: Morning brief — today's agenda, the emails that need an answer, and the 3 priorities of the day, from Gmail and Google Calendar. Perfect as a scheduled task every weekday morning. Use when the user types /claude-agent-kit:morning-brief or asks for their morning brief / daily brief.
 ---
 
 # Morning brief
