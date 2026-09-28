@@ -18,6 +18,8 @@ Ce kit contient deux choses :
 | Fonction | Plan Claude gratuit | Plans payants (Pro, Max…) |
 |---|:---:|:---:|
 | Skills (les 7 du kit) | ✅ | ✅ |
+| Mémoire, Projets | ✅ | ✅ |
+| Recherche dans les anciennes conversations | — | ✅ |
 | Gmail, Google Drive, Agenda | ✅ | ✅ |
 | Claude pour Excel / PowerPoint / Word | — | ✅ |
 | Claude dans Chrome | — | ✅ |
@@ -42,8 +44,10 @@ Claude lit alors vos vrais documents et mails. Il agit en votre nom, avec vos ac
 ### 3. Dire à Claude qui vous êtes
 Lancez le skill **onboard-me** (Partie 2). Il vous interroge 10 minutes et vous donne un texte à coller dans **Paramètres → Profil**. Claude s'en souviendra dans chaque conversation.
 
-### 4. Créer un Projet pour votre activité principale
-**Projets → Nouveau projet**. Mettez-y vos documents de référence (tarifs, catalogue, modèles) et les instructions générées par *onboard-me*. **Une seule source de vérité** : c'est là que Claude va chercher.
+### 4. Laisser Claude se souvenir (mémoire + Projets)
+- **Mémoire** : **Paramètres → Mémoire** → « Générer la mémoire à partir des conversations » : vérifiez qu'elle est activée (elle l'est par défaut, y compris sur le plan gratuit). Claude retient ce qui compte d'une conversation à l'autre. Dans ce même écran, vous pouvez lire, corriger ou supprimer ce qu'il a retenu.
+- **Projets** : **Projets → Nouveau projet**. Mettez-y vos documents de référence (tarifs, catalogue, modèles) et les instructions générées par *onboard-me*. **Une seule source de vérité** : c'est là que Claude va chercher.
+- *Plan payant* : Claude peut aussi rechercher dans vos anciennes conversations (« on en avait parlé la semaine dernière… »).
 
 ### 5. Claude dans Excel, PowerPoint et Word *(plan payant)*
 Installez l'add-in **Claude for Microsoft 365** depuis [Microsoft AppSource](https://marketplace.microsoft.com/en-us/product/office/WA200010725?tab=Overview) → **Get it now** → ouvrez Excel → activez l'add-in → connectez-vous.
@@ -65,6 +69,16 @@ Claude peut alors cliquer, remplir des formulaires et naviguer pour vous. Survei
 4. Vérifiez qu'il est bien **activé** dans la liste.
 
 C'est tout. Vous n'avez rien à taper de spécial : Claude utilise le bon skill quand votre demande correspond. Vous pouvez aussi l'appeler par son nom (« utilise agent-brief »).
+
+---
+
+## Partie 3 — Les limites à connaître
+
+- **Il y a un quota d'utilisation**, qui se recharge avec le temps. Les longues conversations le consomment plus vite, parce que Claude relit tout l'historique à chaque message. **Une nouvelle conversation par nouvelle tâche** : c'est l'habitude qui change le plus.
+- **Joignez seulement les fichiers utiles.** Un gros fichier inutile coûte autant qu'un utile.
+- **Il peut se tromper avec assurance.** Demandez-lui d'où vient un chiffre, ou de refaire le calcul. Le skill *excel-analyst* le fait tout seul.
+- **Claude dans Chrome et les connecteurs agissent avec vos accès.** Commencez par des tâches sans risque, et restez à côté au début.
+- **Rien d'irréversible sans vous** : envoyer, payer, supprimer, publier — toujours votre décision.
 
 ---
 
